@@ -647,12 +647,12 @@ line-height: 1.6;
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(0);
 }
-.modal-form {
+/*.modal-form {
   position: inherit;
   width: 365px;
   min-height: 576px;
   transform: translate(+6%, +1%) scaleY(1) scalex(1);
-}
+}*/
 .modal-input {
   width: 100%;
   height: 40px;
@@ -737,7 +737,7 @@ line-height: 1.6;
   color: var(--logo-color);
   margin-bottom: 0px;
   padding: 0;
-  margin-top: 69px;
+  margin-bottom: 16px;
 }
 
 .check-text {
@@ -1032,6 +1032,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 .modal {
   position: absolute;
+  padding: 72px 24px 24px 24px;
   top: 50%;
   left: 50%;
   width: 408px;
@@ -1089,6 +1090,9 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 .modal-field {
   margin-bottom: 8px;
+}
+.modal-fild-last {
+  margin: 0;
 }
 .input-check {
   margin-bottom: 16px;
