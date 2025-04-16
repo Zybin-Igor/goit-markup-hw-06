@@ -219,26 +219,36 @@ img {
 /*----section 1 _Hero-------*/
 
 /*-----section 2 _Skils-----*/
-.section-skils {
+.section {
 	padding: 120px 0;
 }
 
 .skils-container {
 	margin: 0 auto;
 }
-
+.skils-icon-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #8e8f99;
+	border-radius: 4px;
+	width: 264px;
+	height: 112px;
+	background: #f4f4fd;
+	margin-bottom: 8px;
+}
 .skils-item {
 	width: calc((100% - 72px) / 4);
 
 }
 
-.skils-list {
+/* .skils-list {
 	display: flex;
 	flex-direction: row;
 	gap: 24px;
 	width: 100%;
 	flex-wrap: wrap;
-}
+} */
 
 .skils-item:last-child {
 	margin-right: 0;
@@ -267,17 +277,7 @@ img {
 	color: #434455;
 }
 
-.skils-icon-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border: 1px solid #8e8f99;
-	border-radius: 4px;
-	width: 264px;
-	height: 112px;
-	background: #f4f4fd;
-	margin-bottom: 8px;
-}
+
 
 .visually-hidden {
 	position: absolute;
@@ -403,10 +403,10 @@ img {
 /*----section 4 _Our Portfolio-----*/
 
 
-.portfolio-section {
+/* .portfolio {
 	padding-top: 120px;
 	padding-bottom: 120px;
-}
+} */
 
 .portfolio-section-title {
 	font-weight: 700;
