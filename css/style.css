@@ -1020,31 +1020,20 @@ button {
 	}
 
 	.footer {
-		text-align: start;
+		text-align: left;
 	}
 
-	.footer-container-part-one {
-		margin-bottom: 0;
-	}
-
-	.footer-container-part-two {
-		margin-bottom: 0;
-	}
-
-	.footer-label-container {
-		margin-bottom: 0;
-	}
-
-	.subscribe-input {
-		margin-bottom: 0;
-	}
-
+	.footer-container-part-one,
+	.footer-container-part-two,
+	.footer-label-container,
+	.subscribe-input,
 	.social-link-footer {
 		margin-bottom: 0;
 	}
 
-	.social-media {
-		text-align: start;
+	.social-media,
+	.subscribe-text {
+		text-align: left;
 	}
 
 	.form-container {
@@ -1058,10 +1047,6 @@ button {
 
 	.subscribe-input {
 		width: 264px;
-	}
-
-	.subscribe-text {
-		text-align: start;
 	}
 }
 
@@ -1098,7 +1083,6 @@ button {
 /*------------section 5 _Footer------------------*/
 /*--------------------------modal--------------------------*/
 .modal-backdrop {
-	background: rgba(46, 47, 66, 0.4);
 	width: 100%;
 	height: 100%;
 	position: fixed;
@@ -1106,6 +1090,7 @@ button {
 	opacity: 0;
 	visibility: hidden;
 	pointer-events: none;
+	background: rgba(46, 47, 66, 0.4);
 	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
 		visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1266,7 +1251,7 @@ button {
 }
 
 .privacy-policy {
-	line-height: 1.33333;
+	line-height: 1.33;
 	text-decoration: underline;
 	text-decoration-skip-ink: none;
 	color: #4d5ae5;
@@ -1352,7 +1337,7 @@ button {
 }
 
 /*--------------------------modal--------------------------*/
-.backdrop {
+.modal-backdrop {
 	background: rgba(46, 47, 66, 0.4);
 	width: 100%;
 	height: 100%;
@@ -1527,12 +1512,15 @@ button {
 }
 
 .privacy-policy {
-	line-height: 1.33333;
+	line-height: 1.33;
 	text-decoration: underline;
 	text-decoration-skip-ink: none;
 	color: #4d5ae5;
 }
+.modal-check-description {
+	pointer-events: auto;
 
+}
 .span-icon {
 	border-radius: 2px;
 	border: 1px solid rgba(46, 47, 66, 0.4);
@@ -1548,7 +1536,7 @@ button {
 		fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.privacy-policy-input:checked+.privacy-policy-label .span-icon {
+.privacy-policy-input:checked + .privacy-policy-label.span-icon {
 	background-color: #404bbf;
 	border: none;
 	fill: #f4f4fd;
